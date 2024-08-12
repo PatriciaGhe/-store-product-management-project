@@ -1,5 +1,6 @@
 package com.storemanagement.controller;
 
+import com.storemanagement.model.Clothing;
 import com.storemanagement.model.Product;
 import com.storemanagement.service.ProductService;
 import org.springframework.web.bind.annotation.*;
@@ -29,7 +30,7 @@ public class ProductController {
     }
 
     @PostMapping
-    public Product addProduct(@RequestBody Product product) {
+    public Product addClothing(@RequestBody Clothing product) {
         return productService.save(product);
     }
     @DeleteMapping("/{id}")

@@ -18,10 +18,10 @@ public class Main {
         System.out.println();
 
         //Create products
-        Product laptop = new Electronics("1", "Laptop", 2500.00, 15);
-        Product shirt = new Clothing("2", "Shirt", 24.95, 50);
-        Product sneakers = new Shoes("3","Shoes", 57.00, 35);
-        Product earrings = new Jewelry("4", "Jewelry", 35.00, 15);
+        Product laptop = new Electronics(1L, "Laptop", 2500.00, 15);
+        Product shirt = new Clothing(2L, "Shirt", 24.95, 50);
+        Product sneakers = new Shoes(3L,"Shoes", 57.00, 35);
+        Product earrings = new Jewelry(4L, "Jewelry", 35.00, 15);
 
         //Products added in store
         store.addProduct(laptop);

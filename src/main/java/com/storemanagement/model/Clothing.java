@@ -1,7 +1,7 @@
 package com.storemanagement.model;
 
 public class Clothing extends Product{
-    public Clothing(String id, String name, double price, int quantity) {
+    public Clothing(Long id, String name, double price, int quantity) {
         super(id, name, price, quantity);
     }
 
