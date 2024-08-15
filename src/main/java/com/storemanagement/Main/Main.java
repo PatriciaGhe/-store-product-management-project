@@ -18,10 +18,10 @@ public class Main {
         System.out.println();
 
         //Create products
-        Product laptop = new Electronics(1L, "Laptop", 2500.00, 15);
-        Product shirt = new Clothing(2L, "Shirt", 24.95, 50);
-        Product sneakers = new Shoes(3L,"Shoes", 57.00, 35);
-        Product earrings = new Jewelry(4L, "Jewelry", 35.00, 15);
+        Product laptop = new Electronics(1L, "Laptop", "14inch", 2500.00, 15);
+        Product shirt = new Clothing(2L, "Shirt", "M",24.95, 50);
+        Product sneakers = new Shoes(3L,"Shoes", "38", 57.00, 35);
+        Product earrings = new Jewelry(4L, "Jewelry", "6", 35.00, 15);
 
         //Products added in store
         store.addProduct(laptop);
@@ -44,6 +44,7 @@ public class Main {
         orderProducts.add(shirt);
         orderProducts.add(sneakers);
         orderProducts.add(earrings);
+
         Order command = new Order("O1", customer1, orderProducts, new Date(), laptop.getPrice() + shirt.getPrice());
         //Order command1;
        // command1 = new Order("O2", customer2, orderProducts, new Date(), sneakers.getPrice() + shirt.getPrice() + earrings.getPrice());

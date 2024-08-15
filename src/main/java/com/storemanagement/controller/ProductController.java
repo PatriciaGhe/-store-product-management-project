@@ -1,8 +1,7 @@
 package com.storemanagement.controller;
 
-import com.storemanagement.model.Clothing;
-import com.storemanagement.model.Product;
-import com.storemanagement.service.ProductService;
+import com.storemanagement.model.*;
+import com.storemanagement.service.impl.ProductServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -13,9 +12,9 @@ import java.util.Optional;
 @RequestMapping("/api/products")
 public class ProductController {
 
-    private final ProductService productService;
+    private final ProductServiceImpl productService;
 
-    public ProductController(ProductService productService) {
+    public ProductController(ProductServiceImpl productService) {
         this.productService = productService;
     }
 
@@ -33,6 +32,19 @@ public class ProductController {
     public Product addClothing(@RequestBody Clothing product) {
         return productService.save(product);
     }
+
+    public Product addElectronics(@RequestBody Electronics product) {
+        return productService.save(product);
+    }
+
+    public Product addJewelry(@RequestBody Jewelry product) {
+        return productService.save(product);
+    }
+
+    public Product addShoes(@RequestBody Shoes product) {
+        return productService.save(product);
+    }
+
     @DeleteMapping("/{id}")
     public void deleteProductById(@PathVariable Long id) {
         productService.delete(id);

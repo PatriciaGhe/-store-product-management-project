@@ -1,8 +1,8 @@
 package com.storemanagement.model;
 
 public class Jewelry extends Product{
-    public Jewelry(Long id, String name, double price, int quantity) {
-        super(id, name, price, quantity);
+    public Jewelry(Long id, String name, String size, double price, int quantity) {
+        super(id, name, size, price, quantity);
     }
 
     @Override
