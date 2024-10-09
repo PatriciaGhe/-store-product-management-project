@@ -28,7 +28,7 @@ public class ProductController {
         return productService.findById(id);
     }
 
-    @PostMapping
+    @PostMapping("/clothing")
     public Product addClothing(@RequestBody Clothing product) {
         return productService.save(product);
     }

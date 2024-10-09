@@ -1,7 +1,9 @@
 package com.storemanagement.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class Clothing extends Product{
-    public Clothing(Long id, String name, String size, double price, int quantity) {
+    public Clothing( Long id, String name, String size, double price, int quantity) {
         super(id, name, size, price, quantity);
     }
 

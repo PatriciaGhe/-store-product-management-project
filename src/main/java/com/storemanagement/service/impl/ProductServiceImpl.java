@@ -15,7 +15,7 @@ public class ProductServiceImpl implements ProductService {
     private List<Product> products = new ArrayList<Product>();
     private Long currentId = 1L;
 
-    public List<Product> findAll() {
+    public List<Product> findAllProduct() {
         return products;
     }
 
@@ -50,5 +50,10 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public void deleteProductById(Long id) {
 
+    }
+
+    @Override
+    public List<Product> findAll() {
+        return products;
     }
 }

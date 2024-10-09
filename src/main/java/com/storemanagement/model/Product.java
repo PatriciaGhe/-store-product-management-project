@@ -1,6 +1,9 @@
 package com.storemanagement.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public abstract class Product {
+    @JsonIgnore
     private Long id;
     private String name;
     private String size;
